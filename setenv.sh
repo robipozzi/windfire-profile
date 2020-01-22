@@ -9,6 +9,7 @@ end=$'\e[0m'
 coffee=$'\xE2\x98\x95'
 coffee3="${coffee} ${coffee} ${coffee}"
 ##### Terminal Colors - END
+
 ###### Variable section - START
 ANGULAR_DIST_DIR=dist/
 HOME_DIR=$HOME/dev/windfire-profile
