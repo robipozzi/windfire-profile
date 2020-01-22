@@ -1,0 +1,40 @@
+<div class="jumbotron">
+  <div class="row justify-content-center">
+    <div class="col fa-fw">
+      <h1>Roberto Pozzi website</h1>
+    </div>
+  </div>
+</div>
+<div class="container">
+<!-- Three columns of text below the carousel -->
+  <div class="row justify-content-center">
+    <div class="col-lg-4">
+      <a routerLink="/myprofile" routerLinkActive="active">
+        <img class="img-fluid" src="https://s3.eu-central-1.amazonaws.com/robipozzi/user.png"
+          alt="My profile" width="140" height="140">
+      </a>
+      <h2>{{home.heading1}}</h2>
+      <p>Something about myself</p>
+      <p><a class="btn btn-secondary" routerLink="/myprofile" routerLinkActive="active">View details &raquo;</a>
+      </p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <a routerLink="/myactivities" routerLinkActive="active">
+        <img class="img-fluid" src="https://s3.eu-central-1.amazonaws.com/robipozzi/settings-gears.png"
+          alt="My Projects" width="140" height="140">
+      </a>
+      <h2>{{home.heading2}}</h2>
+      <p>Let me tell you something about projects I have been working on recently</p>
+      <p><a class="btn btn-secondary" routerLink="/myactivities" routerLinkActive="active">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <a routerLink="/mytravels" routerLinkActive="active">
+        <img class="img-fluid" src="https://s3.eu-central-1.amazonaws.com/robipozzi/map.png"
+          alt="My Travels" width="140" height="140">
+      </a>
+      <h2>{{home.heading3}}</h2>
+      <p>Something about travels I made</p>
+      <p><a class="btn btn-secondary" routerLink="/mytravels" routerLinkActive="active">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+</div>
