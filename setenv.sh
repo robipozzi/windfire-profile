@@ -11,8 +11,8 @@ coffee3="${coffee} ${coffee} ${coffee}"
 ##### Terminal Colors - END
 
 ###### Variable section - START
-ANGULAR_DIST_DIR=dist/
-HOME_DIR=$HOME/dev/windfire-profile
+APP_HOME_DIR=$HOME/dev/windfire-profile
+ANGULAR_DIST_DIR=$APP_HOME_DIR/dist/
 DOCKER_IMAGE_NAME=windfire-profile
 DOCKER_IMAGE_VERSION=1.0
 DOCKER_CONTAINER_NAME=windfire-profile
