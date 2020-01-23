@@ -1,7 +1,7 @@
 # Windfire - Roberto Pozzi profile website
 [TODO]
 
-![](/img/architecture.png)
+
 
 ## Configuration for Raspberry deployment
 Apache2 works as web server and serves all content except images
