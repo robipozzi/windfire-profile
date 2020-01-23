@@ -1,4 +1,4 @@
-# Windfire - Roberto Pozzi website
+# Windfire - Roberto Pozzi profile website
 [TODO]
 
 ## Configuration for Raspberry deployment
