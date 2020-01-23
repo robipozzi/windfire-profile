@@ -14,7 +14,7 @@ echo
 
 ## Deploy Angular application to remote Raaspberry box
 echo ${cyn}Deploy app on Raspberry Pi ...${end}
-ansible-playbook -u pi deploy.yaml
+ansible-playbook -u pi raspberry/deploy.yaml
 echo ${cyn}Done${end}
 echo
 
