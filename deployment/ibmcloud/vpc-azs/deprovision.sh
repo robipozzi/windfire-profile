@@ -4,16 +4,6 @@ source ../../../setenv.sh
 SCRIPT=deprovision.sh
 ###### Variable section - END
 
-###############
-## printHelp ##
-###############
-printHelp()
-{
-    printf "${red}Missing arguments !!!${end}\n"
-	printf "\n${yel}Usage:${end}\n"
-  	printf "${cyn}$SCRIPT${end}\n"
-}
-
 ####################
 ## Run Terraform  ##
 ####################
@@ -22,7 +12,7 @@ runTerraform()
 	echo "######################################################"
 	echo "############## Run Terraform automation ##############"
 	echo "######################################################"
-    echo ${cyn}Running Terraform plan ...${end}
+    echo ${cyn}Running Terraform destroy command ...${end}
     terraform destroy -auto-approve 
 }
 

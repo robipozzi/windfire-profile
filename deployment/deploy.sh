@@ -22,7 +22,8 @@ deployToIBMCloud()
 	## Deploy Angular application to IBM Cloud
     echo ${cyn}Deploy app to IBM Cloud ...${end}
     cd ibmcloud/vpc-azs
-    ./provision.sh
+    # TODO: change to 'apply'
+    ./provision.sh plan
     echo ${cyn}Done${end}
     echo
 }
@@ -49,14 +50,14 @@ printSelectPlatform()
 {
 	echo ${grn}Select deployment platform : ${end}
 	echo ${grn}1. Raspberry${end}
-	#echo ${grn}2. IBM Cloud ${end}
+	echo ${grn}2. IBM Cloud ${end}
 	read PLATFORM_OPTION
 	DEPLOY_FUNCTION=
 	case $PLATFORM_OPTION in
 		1)  DEPLOY_FUNCTION="deployToRaspberry"
 			;;
-		#2)  DEPLOY_FUNCTION="deployToIBMCloud"
-		#	;;
+		2)  DEPLOY_FUNCTION="deployToIBMCloud"
+			;;
 		*) 	printf "\n${red}No valid option selected${end}\n"
 			printSelectPlatform
 			;;
