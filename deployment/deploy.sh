@@ -20,8 +20,8 @@ buildAngularApp()
 deployToIBMCloud()
 {
 	## Deploy Angular application to IBM Cloud
-    echo ${cyn}Deploy app to IBM Cloud ...${end}
-    cd ibmcloud/vpc-azs
+    echo ${cyn}Deploy application to IBM Cloud ...${end}
+    cd ibmcloud/architecture-single_server
     # TODO: change to 'apply'
     ./provision.sh plan
     echo ${cyn}Done${end}
@@ -31,7 +31,7 @@ deployToIBMCloud()
 deployToRaspberry()
 {
 	## Deploy Angular application to remote Raspberry box
-    echo ${cyn}Deploy app to Raspberry Pi ...${end}
+    echo ${cyn}Deploy application to Raspberry Pi ...${end}
     ansible-playbook -u pi raspberry/deploy.yaml
     echo ${cyn}Done${end}
     echo
@@ -50,7 +50,7 @@ printSelectPlatform()
 {
 	echo ${grn}Select deployment platform : ${end}
 	echo ${grn}1. Raspberry${end}
-	echo ${grn}2. IBM Cloud ${end}
+	echo ${grn}2. IBM Cloud - Single Server${end}
 	read PLATFORM_OPTION
 	DEPLOY_FUNCTION=
 	case $PLATFORM_OPTION in
