@@ -32,7 +32,7 @@ deployToRaspberry()
 {
 	## Deploy Angular application to remote Raspberry box
     echo ${cyn}Deploy application to Raspberry Pi ...${end}
-    ansible-playbook -u pi raspberry/deploy.yaml
+    ansible-playbook -u pi raspberry/deploy.yaml 
     echo ${cyn}Done${end}
     echo
 }
