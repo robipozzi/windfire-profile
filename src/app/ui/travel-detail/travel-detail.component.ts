@@ -49,7 +49,7 @@ export class TravelDetailComponent implements OnInit {
         break;
       case 'puglia':
         this.travel.destinationName = 'Puglia 2017';
-        this.travel.destinationVideoURL = 'https://www.youtube.com/embed/1xSuk5ek8Dk?autoplay=1';
+        this.travel.destinationVideoURL = 'https://www.youtube.com/embed/tLWCrk80P5s?autoplay=1';
         break;
       default:
         break;
