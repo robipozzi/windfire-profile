@@ -1,11 +1,11 @@
-source setenv.sh
+source ./setenv.sh
 
 ## Remove Angular distribution folder
 rm -rf $ANGULAR_DIST_DIR
 
 ## Build Angular app for production environment
 echo ${cyn}Building Angular app ...${end}
-ng build --prod
+ng build --configuration production
 echo ${cyn}Angular app built${end}
 echo
 

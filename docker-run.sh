@@ -1,4 +1,4 @@
-source setenv.sh
+source ./setenv.sh
 
 ## Delete running Docker container
 echo ${cyn}Removing $DOCKER_CONTAINER_NAME Docker container ...${end}
